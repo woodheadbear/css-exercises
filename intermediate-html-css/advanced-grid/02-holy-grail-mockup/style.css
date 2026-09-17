@@ -3,7 +3,14 @@
   padding: 0;
 }
 
+ul {
+  list-style: none;
+}
+
 .container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 4px;
   text-align: center;
 }
 
@@ -17,6 +24,14 @@
 
 .header {
   background-color: #393f4d;
+  grid-column: 1 / 3;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  align-items: center;
+}
+
+.logo {
+  text-align: left;
 }
 
 .menu ul,
@@ -24,7 +39,12 @@
   font-size: 16px;
 }
 
-.sidebar {
+.menu ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.menu .sidebar {
   background-color: #C50208;
 }
 
